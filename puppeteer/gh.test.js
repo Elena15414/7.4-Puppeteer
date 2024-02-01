@@ -1,6 +1,7 @@
-const jestPuppeteerConfig = require("./jest-puppeteer.config");
-const jestConfig = require("./jest.config");
-const { testTimeout } = require("./jest.config");
+const {launch}= require("./jest-puppeteer.config");
+const {verbose, preset} = require("./jest.config");
+const { chromium } = require("puppeteer");
+
 
 let page;
 
